@@ -5,7 +5,7 @@
     "keywords": ["IMAP", "mail", "webhook", "client", "ruby"],
     "success_url": "/admin",
     "scripts": {
-        "postdeploy": "bundle exec rake db:seed"
+        "postdeploy": "bundle exe rake db:migrate && bundle exec rake db:seed"
     },
     "addons": [
         "heroku-postgresql"
